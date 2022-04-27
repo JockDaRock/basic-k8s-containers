@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Sample App NodeJS Ignores
+sample-apps/nodejs/node_modules/
+
+# Sample App Golang Ignores
+sample-apps/golang/hello
+sample-apps/golang/go.mod
