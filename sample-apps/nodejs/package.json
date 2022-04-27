@@ -1,0 +1,19 @@
+{
+  "name": "whats-up-beautiful-people",
+  "version": "1.0.0",
+  "description": "super simple hello world",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JockDaRock",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

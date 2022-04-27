@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: go-samp
+spec:
+  containers:
+  - name: go-samp
+    image: ghcr.io/k8s-go-samp:v0.0.0
+    ports:
+    - containerPort: 8080
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100Mi
+      requests:
+        cpu: 20m
+        memory: 20Mi
