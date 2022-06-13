@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodejs-samp
+  namespace: singlethreadgang
+spec:
+  type: ClusterIP
+  selector:
+    app: nodejs-samp
+  ports:
+  - protocol: TCP
+    port: 8081
+    targetPort: 8081

@@ -6,5 +6,12 @@ spec:
   containers:
   - name: nodejs-samp
     image: ghcr.io/jockdarock/k8s-nodejs-samp:v0.0.0
+    resources:
+      requests:
+        memory: "20Mi"
+        cpu: "20m"
+      limits:
+        memory: "100Mi"
+        cpu: "100m"
     ports:
     - containerPort: 8081

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: py-samp
+  namespace: singlethreadgang
+spec:
+  type: ClusterIP
+  selector:
+    app: py-samp
+  ports:
+  - protocol: TCP
+    port: 8082
+    targetPort: 8082

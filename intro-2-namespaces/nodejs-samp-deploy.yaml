@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-samp
+  namespace: singlethreadgang
+  labels:
+    app: nodejs-samp
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      name: nodejs-samp
+  template:
+    metadata:
+      labels:
+        app: nodejs-samp
+        name: nodejs-samp
+    spec:
+      containers:
+      - image: ghcr.io/jockdarock/k8s-nodejs-samp:v0.0.0
+        name: nodejs-samp
+        resources:
+          requests:
+            memory: "20Mi"
+            cpu: "20m"
+          limits:
+            memory: "100Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 8081
+      restartPolicy: Always

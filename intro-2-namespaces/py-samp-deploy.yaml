@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: py-samp
+  namespace: singlethreadgang
+  labels:
+    app: py-samp
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      name: py-samp
+  template:
+    metadata:
+      labels:
+        app: py-samp
+        name: py-samp
+    spec:
+      containers:
+      - image: ghcr.io/jockdarock/k8s-py-samp:v0.0.0
+        name: py-samp
+        resources:
+          requests:
+            memory: "20Mi"
+            cpu: "20m"
+          limits:
+            memory: "100Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 8082
+      restartPolicy: Always
