@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: go-samp
-    image: ghcr.io/jockdarock/k8s-go-samp:v0.0.0
+    image: ghcr.io/jockdarock/k8s-go-samp:v0.0.1
     resources:
       requests:
         memory: "20Mi"

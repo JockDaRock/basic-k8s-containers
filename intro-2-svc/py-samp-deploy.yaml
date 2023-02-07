@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: go-samp
-  namespace: gogogo
+  name: py-samp
+  namespace: default
   labels:
-    app: go-samp
+    app: py-samp
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels: 
-      name: go-samp
+      name: py-samp
   template:
     metadata:
       labels:
-        app: go-samp
-        name: go-samp
+        app: py-samp
+        name: py-samp
     spec:
       containers:
-      - image: ghcr.io/jockdarock/k8s-go-samp:v0.0.1
-        name: go-samp
+      - image: ghcr.io/jockdarock/k8s-py-samp:v0.0.0
+        name: py-samp
         resources:
           requests:
             memory: "20Mi"
@@ -27,5 +27,5 @@ spec:
             memory: "100Mi"
             cpu: "100m"
         ports:
-        - containerPort: 8080
+        - containerPort: 8082
       restartPolicy: Always

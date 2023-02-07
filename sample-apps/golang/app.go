@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-    http.HandleFunc("/", WhatsUpBeautifulPeople)
+    http.HandleFunc("/shoulderText", WhatsUpBeautifulPeople)
+    http.Handle("/", http.FileServer(http.Dir("./static")))
     http.ListenAndServe(":8080", nil)
 }
 
