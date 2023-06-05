@@ -1,6 +1,12 @@
 # basic-k8s-containers
 I am using this repo for some basic code and content for using container and kubernetes
 
+# Videos
+
+## Getting Started with  Cloud Native App security with Panoptica and DevNet Learning Labs
+
+https://youtu.be/mRmo8afj17c
+
 # Resources for learning Kubernetes
 
 ## Not for the faint of heart... Kubernetes the hardway
