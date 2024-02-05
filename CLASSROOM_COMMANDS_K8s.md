@@ -1,6 +1,6 @@
 # Commands for Classroom Session
 
-> This is where I store my commands for the classroom session for Intro to Kubernetes. Just in case someone wants to follow along or they want to try it later. These commands should work as long as you are in a bash or similar terminal (git-bash or WSL for Windows, term or iterm2 for Mac, or any basic terminal on any Linux OS with kubectl installed).
+> This is where I store my commands for the classroom session for Getting Started with Kubernetes. Just in case someone wants to follow along or they want to try it later. These commands should work as long as you are in a bash or similar terminal (git-bash or WSL for Windows, term or iterm2 for Mac, or any basic terminal on any Linux OS with kubectl installed).
 
 ## Prereqs
 
